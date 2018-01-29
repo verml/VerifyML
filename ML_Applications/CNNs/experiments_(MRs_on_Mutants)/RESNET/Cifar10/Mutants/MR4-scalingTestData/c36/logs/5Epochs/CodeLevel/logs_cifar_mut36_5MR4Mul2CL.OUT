@@ -1,0 +1,17 @@
+INFO:tensorflow:Using config: {'_service': None, '_task_type': 'worker', '_task_id': 0, '_keep_checkpoint_max': 5, '_save_checkpoints_secs': 1000000000.0, '_num_worker_replicas': 1, '_tf_random_seed': 7, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_is_chief': True, '_save_checkpoints_steps': None, '_model_dir': '36_cifar_mr1_rgb_model', '_save_summary_steps': 100, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000002BC166C5F60>, '_num_ps_replicas': 0, '_session_config': None, '_master': ''}
+WARNING:tensorflow:From 36_cifar_mr4_mul_2.py:87: FixedLengthRecordDataset.__init__ (from tensorflow.contrib.data.python.ops.readers) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.FixedLengthRecordDataset`.
+WARNING:tensorflow:From 36_cifar_mr4_mul_2.py:215: calling Dataset.map (from tensorflow.contrib.data.python.ops.dataset_ops) with output_buffer_size is deprecated and will be removed in a future version.
+Instructions for updating:
+Replace `num_threads=T` with `num_parallel_calls=T`. Replace `output_buffer_size=N` with `ds.prefetch(N)` on the returned dataset.
+WARNING:tensorflow:From 36_cifar_mr4_mul_2.py:215: calling Dataset.map (from tensorflow.contrib.data.python.ops.dataset_ops) with num_threads is deprecated and will be removed in a future version.
+Instructions for updating:
+Replace `num_threads=T` with `num_parallel_calls=T`. Replace `output_buffer_size=N` with `ds.prefetch(N)` on the returned dataset.
+INFO:tensorflow:Starting evaluation at 2018-01-18-07:39:36
+INFO:tensorflow:Restoring parameters from 36_cifar_mr1_rgb_model\model.ckpt-200
+INFO:tensorflow:Finished evaluation at 2018-01-18-07:40:03
+INFO:tensorflow:Saving dict for global step 200: accuracy = 0.10198, global_step = 200, loss = 2.53585
+WARNING:tensorflow:Input graph does not contain a QueueRunner. That means predict yields forever. This is probably a mistake.
+INFO:tensorflow:Restoring parameters from 36_cifar_mr1_rgb_model\model.ckpt-200
+2018-01-18 13:09:39.134929: I C:\tf_jenkins\home\workspace\rel-win\M\windows\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2

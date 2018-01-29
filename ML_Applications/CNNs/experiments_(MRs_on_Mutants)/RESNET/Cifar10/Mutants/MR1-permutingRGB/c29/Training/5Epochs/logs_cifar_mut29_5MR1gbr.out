@@ -1,0 +1,67 @@
+INFO:tensorflow:Using config: {'_master': '', '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000002327ED00EB8>, '_session_config': None, '_task_type': 'worker', '_task_id': 0, '_is_chief': True, '_tf_random_seed': 7, '_save_checkpoints_steps': None, '_save_checkpoints_secs': 1000000000.0, '_model_dir': 'cifar10_model', '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_keep_checkpoint_max': 5, '_save_summary_steps': 100, '_num_ps_replicas': 0, '_num_worker_replicas': 1, '_service': None}
+WARNING:tensorflow:From Mutants\Mutants on MRs\cifar_mutants_anurag\cifar_mutants_anurag\29_cifar_mr1_gbr.py:87: FixedLengthRecordDataset.__init__ (from tensorflow.contrib.data.python.ops.readers) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.FixedLengthRecordDataset`.
+WARNING:tensorflow:From Mutants\Mutants on MRs\cifar_mutants_anurag\cifar_mutants_anurag\29_cifar_mr1_gbr.py:166: calling Dataset.map (from tensorflow.contrib.data.python.ops.dataset_ops) with num_threads is deprecated and will be removed in a future version.
+Instructions for updating:
+Replace `num_threads=T` with `num_parallel_calls=T`. Replace `output_buffer_size=N` with `ds.prefetch(N)` on the returned dataset.
+WARNING:tensorflow:From Mutants\Mutants on MRs\cifar_mutants_anurag\cifar_mutants_anurag\29_cifar_mr1_gbr.py:166: calling Dataset.map (from tensorflow.contrib.data.python.ops.dataset_ops) with output_buffer_size is deprecated and will be removed in a future version.
+Instructions for updating:
+Replace `num_threads=T` with `num_parallel_calls=T`. Replace `output_buffer_size=N` with `ds.prefetch(N)` on the returned dataset.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Saving checkpoints for 1 into cifar10_model\model.ckpt.
+INFO:tensorflow:learning_rate = 0.1, train_accuracy = 0.0703125, cross_entropy = 2.6737
+INFO:tensorflow:step = 1, loss = 2.46162
+INFO:tensorflow:Saving checkpoints for 40 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 1.75361.
+INFO:tensorflow:Starting evaluation at 2017-12-13-17:07:46
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-40
+INFO:tensorflow:Finished evaluation at 2017-12-13-17:07:55
+INFO:tensorflow:Saving dict for global step 40: accuracy = 0.135644, global_step = 40, loss = 128.951
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-40
+INFO:tensorflow:Saving checkpoints for 41 into cifar10_model\model.ckpt.
+INFO:tensorflow:learning_rate = 0.1, train_accuracy = 0.34375, cross_entropy = 1.73564
+INFO:tensorflow:step = 41, loss = 1.51682
+INFO:tensorflow:Saving checkpoints for 80 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 1.56049.
+INFO:tensorflow:Starting evaluation at 2017-12-13-17:10:59
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-80
+INFO:tensorflow:Finished evaluation at 2017-12-13-17:11:09
+INFO:tensorflow:Saving dict for global step 80: accuracy = 0.107921, global_step = 80, loss = 44.0107
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-80
+INFO:tensorflow:Saving checkpoints for 81 into cifar10_model\model.ckpt.
+INFO:tensorflow:learning_rate = 0.1, train_accuracy = 0.382813, cross_entropy = 1.56322
+INFO:tensorflow:step = 81, loss = 1.33782
+INFO:tensorflow:Saving checkpoints for 120 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 1.41679.
+INFO:tensorflow:Starting evaluation at 2017-12-13-17:14:11
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-120
+INFO:tensorflow:Finished evaluation at 2017-12-13-17:14:19
+INFO:tensorflow:Saving dict for global step 120: accuracy = 0.0980198, global_step = 120, loss = 16.3716
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-120
+INFO:tensorflow:Saving checkpoints for 121 into cifar10_model\model.ckpt.
+INFO:tensorflow:learning_rate = 0.1, train_accuracy = 0.445313, cross_entropy = 1.50004
+INFO:tensorflow:step = 121, loss = 1.26835
+INFO:tensorflow:Saving checkpoints for 160 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 1.3773.
+INFO:tensorflow:Starting evaluation at 2017-12-13-17:17:22
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-160
+INFO:tensorflow:Finished evaluation at 2017-12-13-17:17:31
+INFO:tensorflow:Saving dict for global step 160: accuracy = 0.110891, global_step = 160, loss = 9.37851
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-160
+INFO:tensorflow:Saving checkpoints for 161 into cifar10_model\model.ckpt.
+INFO:tensorflow:learning_rate = 0.1, train_accuracy = 0.484375, cross_entropy = 1.33213
+INFO:tensorflow:step = 161, loss = 1.09362
+INFO:tensorflow:Saving checkpoints for 200 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 1.05238.
+INFO:tensorflow:Starting evaluation at 2017-12-13-17:20:33
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-200
+INFO:tensorflow:Finished evaluation at 2017-12-13-17:20:42
+INFO:tensorflow:Saving dict for global step 200: accuracy = 0.133663, global_step = 200, loss = 14.7329
+WARNING:tensorflow:Input graph does not contain a QueueRunner. That means predict yields forever. This is probably a mistake.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-200
+2017-12-13 22:34:50.124885: I C:\tf_jenkins\home\workspace\rel-win\M\windows\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2

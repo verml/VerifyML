@@ -1,0 +1,42 @@
+INFO:tensorflow:Using config: {'_save_summary_steps': 100, '_log_step_count_steps': 100, '_save_checkpoints_steps': None, '_tf_random_seed': 7, '_num_worker_replicas': 1, '_save_checkpoints_secs': 1000000000.0, '_task_id': 0, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000002040E118390>, '_keep_checkpoint_max': 5, '_model_dir': 'cifar10_model', '_keep_checkpoint_every_n_hours': 10000, '_is_chief': True, '_service': None, '_session_config': None, '_master': '', '_task_type': 'worker', '_num_ps_replicas': 0}
+WARNING:tensorflow:From 221_cifar_mr1_bgr.py:87: FixedLengthRecordDataset.__init__ (from tensorflow.contrib.data.python.ops.readers) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.FixedLengthRecordDataset`.
+WARNING:tensorflow:From 221_cifar_mr1_bgr.py:165: calling Dataset.map (from tensorflow.contrib.data.python.ops.dataset_ops) with num_threads is deprecated and will be removed in a future version.
+Instructions for updating:
+Replace `num_threads=T` with `num_parallel_calls=T`. Replace `output_buffer_size=N` with `ds.prefetch(N)` on the returned dataset.
+WARNING:tensorflow:From 221_cifar_mr1_bgr.py:165: calling Dataset.map (from tensorflow.contrib.data.python.ops.dataset_ops) with output_buffer_size is deprecated and will be removed in a future version.
+Instructions for updating:
+Replace `num_threads=T` with `num_parallel_calls=T`. Replace `output_buffer_size=N` with `ds.prefetch(N)` on the returned dataset.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Saving checkpoints for 1 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.09375, cross_entropy = 2.54652, learning_rate = 0.1
+INFO:tensorflow:loss = 2.7587, step = 1
+ERROR:tensorflow:Model diverged with loss = NaN.
+Traceback (most recent call last):
+  File "221_cifar_mr1_bgr.py", line 318, in <module>
+    tf.app.run(argv=[sys.argv[0]] + unparsed)
+  File "C:\Users\jagadeesh.c.bose\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\python\platform\app.py", line 48, in run
+    _sys.exit(main(_sys.argv[:1] + flags_passthrough))
+  File "221_cifar_mr1_bgr.py", line 294, in main
+    logging_hook])
+  File "C:\Users\jagadeesh.c.bose\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\python\estimator\estimator.py", line 302, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "C:\Users\jagadeesh.c.bose\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\python\estimator\estimator.py", line 783, in _train_model
+    _, loss = mon_sess.run([estimator_spec.train_op, estimator_spec.loss])
+  File "C:\Users\jagadeesh.c.bose\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\python\training\monitored_session.py", line 521, in run
+    run_metadata=run_metadata)
+  File "C:\Users\jagadeesh.c.bose\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\python\training\monitored_session.py", line 892, in run
+    run_metadata=run_metadata)
+  File "C:\Users\jagadeesh.c.bose\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\python\training\monitored_session.py", line 967, in run
+    raise six.reraise(*original_exc_info)
+  File "C:\Users\jagadeesh.c.bose\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\six.py", line 693, in reraise
+    raise value
+  File "C:\Users\jagadeesh.c.bose\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\python\training\monitored_session.py", line 952, in run
+    return self._sess.run(*args, **kwargs)
+  File "C:\Users\jagadeesh.c.bose\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\python\training\monitored_session.py", line 1032, in run
+    run_metadata=run_metadata))
+  File "C:\Users\jagadeesh.c.bose\AppData\Local\Continuum\anaconda3\envs\tensorflow\lib\site-packages\tensorflow\python\training\basic_session_run_hooks.py", line 579, in after_run
+    raise NanLossDuringTrainingError
+tensorflow.python.training.basic_session_run_hooks.NanLossDuringTrainingError: NaN loss during training.
+2017-12-14 20:16:02.470211: I C:\tf_jenkins\home\workspace\rel-win\M\windows\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2

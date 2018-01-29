@@ -1,0 +1,42 @@
+INFO:tensorflow:Using config: {'_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x0000022B215B8CC0>, '_master': '', '_save_checkpoints_secs': 1000000000.0, '_num_worker_replicas': 1, '_task_id': 0, '_num_ps_replicas': 0, '_is_chief': True, '_keep_checkpoint_max': 5, '_service': None, '_task_type': 'worker', '_save_summary_steps': 100, '_save_checkpoints_steps': None, '_tf_random_seed': 7, '_keep_checkpoint_every_n_hours': 10000, '_log_step_count_steps': 100, '_session_config': None, '_model_dir': 'cifar10_model'}
+WARNING:tensorflow:From azure_coud\azure_coud\221_cifar_mr1_bgr.py:87: FixedLengthRecordDataset.__init__ (from tensorflow.contrib.data.python.ops.readers) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.FixedLengthRecordDataset`.
+WARNING:tensorflow:From azure_coud\azure_coud\221_cifar_mr1_bgr.py:165: calling Dataset.map (from tensorflow.contrib.data.python.ops.dataset_ops) with num_threads is deprecated and will be removed in a future version.
+Instructions for updating:
+Replace `num_threads=T` with `num_parallel_calls=T`. Replace `output_buffer_size=N` with `ds.prefetch(N)` on the returned dataset.
+WARNING:tensorflow:From azure_coud\azure_coud\221_cifar_mr1_bgr.py:165: calling Dataset.map (from tensorflow.contrib.data.python.ops.dataset_ops) with output_buffer_size is deprecated and will be removed in a future version.
+Instructions for updating:
+Replace `num_threads=T` with `num_parallel_calls=T`. Replace `output_buffer_size=N` with `ds.prefetch(N)` on the returned dataset.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Saving checkpoints for 1 into cifar10_model\model.ckpt.
+INFO:tensorflow:cross_entropy = 2.54652, learning_rate = 0.1, train_accuracy = 0.09375
+INFO:tensorflow:step = 1, loss = 2.7587
+ERROR:tensorflow:Model diverged with loss = NaN.
+Traceback (most recent call last):
+  File "azure_coud\azure_coud\221_cifar_mr1_bgr.py", line 318, in <module>
+    tf.app.run(argv=[sys.argv[0]] + unparsed)
+  File "C:\Users\anurag_bms\Anaconda3\envs\tensorflowCPU\lib\site-packages\tensorflow\python\platform\app.py", line 48, in run
+    _sys.exit(main(_sys.argv[:1] + flags_passthrough))
+  File "azure_coud\azure_coud\221_cifar_mr1_bgr.py", line 294, in main
+    logging_hook])
+  File "C:\Users\anurag_bms\Anaconda3\envs\tensorflowCPU\lib\site-packages\tensorflow\python\estimator\estimator.py", line 302, in train
+    loss = self._train_model(input_fn, hooks, saving_listeners)
+  File "C:\Users\anurag_bms\Anaconda3\envs\tensorflowCPU\lib\site-packages\tensorflow\python\estimator\estimator.py", line 783, in _train_model
+    _, loss = mon_sess.run([estimator_spec.train_op, estimator_spec.loss])
+  File "C:\Users\anurag_bms\Anaconda3\envs\tensorflowCPU\lib\site-packages\tensorflow\python\training\monitored_session.py", line 521, in run
+    run_metadata=run_metadata)
+  File "C:\Users\anurag_bms\Anaconda3\envs\tensorflowCPU\lib\site-packages\tensorflow\python\training\monitored_session.py", line 892, in run
+    run_metadata=run_metadata)
+  File "C:\Users\anurag_bms\Anaconda3\envs\tensorflowCPU\lib\site-packages\tensorflow\python\training\monitored_session.py", line 967, in run
+    raise six.reraise(*original_exc_info)
+  File "C:\Users\anurag_bms\Anaconda3\envs\tensorflowCPU\lib\site-packages\six.py", line 693, in reraise
+    raise value
+  File "C:\Users\anurag_bms\Anaconda3\envs\tensorflowCPU\lib\site-packages\tensorflow\python\training\monitored_session.py", line 952, in run
+    return self._sess.run(*args, **kwargs)
+  File "C:\Users\anurag_bms\Anaconda3\envs\tensorflowCPU\lib\site-packages\tensorflow\python\training\monitored_session.py", line 1032, in run
+    run_metadata=run_metadata))
+  File "C:\Users\anurag_bms\Anaconda3\envs\tensorflowCPU\lib\site-packages\tensorflow\python\training\basic_session_run_hooks.py", line 579, in after_run
+    raise NanLossDuringTrainingError
+tensorflow.python.training.basic_session_run_hooks.NanLossDuringTrainingError: NaN loss during training.
+2017-12-17 07:28:00.733730: I C:\tf_jenkins\home\workspace\rel-win\M\windows\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2

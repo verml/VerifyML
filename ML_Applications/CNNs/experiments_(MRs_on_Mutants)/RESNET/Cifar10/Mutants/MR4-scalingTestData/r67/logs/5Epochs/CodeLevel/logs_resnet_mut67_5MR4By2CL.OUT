@@ -1,0 +1,17 @@
+INFO:tensorflow:Using config: {'_task_type': 'worker', '_log_step_count_steps': 100, '_save_checkpoints_secs': 1000000000.0, '_model_dir': 'cifar10_model_resnet_mut67rgb', '_num_ps_replicas': 0, '_save_checkpoints_steps': None, '_master': '', '_save_summary_steps': 100, '_num_worker_replicas': 1, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x00000183EB771F60>, '_service': None, '_session_config': None, '_keep_checkpoint_every_n_hours': 10000, '_tf_random_seed': 7, '_keep_checkpoint_max': 5, '_is_chief': True, '_task_id': 0}
+WARNING:tensorflow:From cifar10_main_VERML_basedOn_nas_fix4_deterministic_resnet_67_mr4_div_2.py:87: FixedLengthRecordDataset.__init__ (from tensorflow.contrib.data.python.ops.readers) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.FixedLengthRecordDataset`.
+WARNING:tensorflow:From cifar10_main_VERML_basedOn_nas_fix4_deterministic_resnet_67_mr4_div_2.py:214: calling Dataset.map (from tensorflow.contrib.data.python.ops.dataset_ops) with num_threads is deprecated and will be removed in a future version.
+Instructions for updating:
+Replace `num_threads=T` with `num_parallel_calls=T`. Replace `output_buffer_size=N` with `ds.prefetch(N)` on the returned dataset.
+WARNING:tensorflow:From cifar10_main_VERML_basedOn_nas_fix4_deterministic_resnet_67_mr4_div_2.py:214: calling Dataset.map (from tensorflow.contrib.data.python.ops.dataset_ops) with output_buffer_size is deprecated and will be removed in a future version.
+Instructions for updating:
+Replace `num_threads=T` with `num_parallel_calls=T`. Replace `output_buffer_size=N` with `ds.prefetch(N)` on the returned dataset.
+INFO:tensorflow:Starting evaluation at 2018-01-16-11:02:47
+INFO:tensorflow:Restoring parameters from cifar10_model_resnet_mut67rgb\model.ckpt-200
+INFO:tensorflow:Finished evaluation at 2018-01-16-11:02:55
+INFO:tensorflow:Saving dict for global step 200: accuracy = 0.157426, global_step = 200, loss = 2.98606
+WARNING:tensorflow:Input graph does not contain a QueueRunner. That means predict yields forever. This is probably a mistake.
+INFO:tensorflow:Restoring parameters from cifar10_model_resnet_mut67rgb\model.ckpt-200
+2018-01-16 16:32:47.784419: I C:\tf_jenkins\home\workspace\rel-win\M\windows\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2

@@ -1,0 +1,312 @@
+INFO:tensorflow:Using config: {'_keep_checkpoint_every_n_hours': 10000, '_save_checkpoints_steps': None, '_task_id': 0, '_is_chief': True, '_master': '', '_log_step_count_steps': 100, '_save_checkpoints_secs': 1000000000.0, '_model_dir': 'cifar10_model', '_num_worker_replicas': 1, '_cluster_spec': <tensorflow.python.training.server_lib.ClusterSpec object at 0x000002CE63422940>, '_service': None, '_save_summary_steps': 100, '_tf_random_seed': 7, '_session_config': None, '_keep_checkpoint_max': 5, '_task_type': 'worker', '_num_ps_replicas': 0}
+WARNING:tensorflow:From cifar10_main_VERML_basedOn_nas_fix4_deterministic_nin_brg.py:87: FixedLengthRecordDataset.__init__ (from tensorflow.contrib.data.python.ops.readers) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.data.FixedLengthRecordDataset`.
+WARNING:tensorflow:From cifar10_main_VERML_basedOn_nas_fix4_deterministic_nin_brg.py:166: calling Dataset.map (from tensorflow.contrib.data.python.ops.dataset_ops) with num_threads is deprecated and will be removed in a future version.
+Instructions for updating:
+Replace `num_threads=T` with `num_parallel_calls=T`. Replace `output_buffer_size=N` with `ds.prefetch(N)` on the returned dataset.
+WARNING:tensorflow:From cifar10_main_VERML_basedOn_nas_fix4_deterministic_nin_brg.py:166: calling Dataset.map (from tensorflow.contrib.data.python.ops.dataset_ops) with output_buffer_size is deprecated and will be removed in a future version.
+Instructions for updating:
+Replace `num_threads=T` with `num_parallel_calls=T`. Replace `output_buffer_size=N` with `ds.prefetch(N)` on the returned dataset.
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Saving checkpoints for 1 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.179688, learning_rate = 0.002, cross_entropy = 3.54896
+INFO:tensorflow:loss = 3.83463, step = 1
+INFO:tensorflow:global_step/sec: 0.379384
+INFO:tensorflow:train_accuracy = 0.152344, learning_rate = 0.002, cross_entropy = 2.304 (263.597 sec)
+INFO:tensorflow:loss = 2.58935, step = 101 (263.597 sec)
+INFO:tensorflow:global_step/sec: 0.37677
+INFO:tensorflow:train_accuracy = 0.132813, learning_rate = 0.002, cross_entropy = 2.30134 (265.414 sec)
+INFO:tensorflow:loss = 2.58646, step = 201 (265.414 sec)
+INFO:tensorflow:global_step/sec: 0.378286
+INFO:tensorflow:train_accuracy = 0.134766, learning_rate = 0.002, cross_entropy = 2.29126 (264.352 sec)
+INFO:tensorflow:loss = 2.57616, step = 301 (264.351 sec)
+INFO:tensorflow:Saving checkpoints for 393 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 2.54037.
+INFO:tensorflow:Starting evaluation at 2018-01-22-19:09:54
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-393
+INFO:tensorflow:Finished evaluation at 2018-01-22-19:10:00
+INFO:tensorflow:Saving dict for global step 393: accuracy = 0.146535, global_step = 393, loss = 2.57051
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-393
+INFO:tensorflow:Saving checkpoints for 394 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.15625, learning_rate = 0.002, cross_entropy = 2.27825
+INFO:tensorflow:loss = 2.56294, step = 394
+INFO:tensorflow:global_step/sec: 0.379249
+INFO:tensorflow:train_accuracy = 0.152344, learning_rate = 0.002, cross_entropy = 2.29374 (263.692 sec)
+INFO:tensorflow:loss = 2.57822, step = 494 (263.692 sec)
+INFO:tensorflow:global_step/sec: 0.376727
+INFO:tensorflow:train_accuracy = 0.158854, learning_rate = 0.002, cross_entropy = 2.25774 (265.444 sec)
+INFO:tensorflow:loss = 2.542, step = 594 (265.444 sec)
+INFO:tensorflow:global_step/sec: 0.378343
+INFO:tensorflow:train_accuracy = 0.169922, learning_rate = 0.002, cross_entropy = 2.22067 (264.311 sec)
+INFO:tensorflow:loss = 2.50473, step = 694 (264.311 sec)
+INFO:tensorflow:Saving checkpoints for 786 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 2.39732.
+INFO:tensorflow:Starting evaluation at 2018-01-22-19:27:27
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-786
+INFO:tensorflow:Finished evaluation at 2018-01-22-19:27:33
+INFO:tensorflow:Saving dict for global step 786: accuracy = 0.155446, global_step = 786, loss = 2.62066
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-786
+INFO:tensorflow:Saving checkpoints for 787 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.195313, learning_rate = 0.002, cross_entropy = 2.1994
+INFO:tensorflow:loss = 2.48327, step = 787
+INFO:tensorflow:global_step/sec: 0.378696
+INFO:tensorflow:train_accuracy = 0.203125, learning_rate = 0.002, cross_entropy = 2.17888 (264.077 sec)
+INFO:tensorflow:loss = 2.46256, step = 887 (264.077 sec)
+INFO:tensorflow:global_step/sec: 0.376193
+INFO:tensorflow:train_accuracy = 0.213542, learning_rate = 0.002, cross_entropy = 2.16497 (265.821 sec)
+INFO:tensorflow:loss = 2.44847, step = 987 (265.821 sec)
+INFO:tensorflow:global_step/sec: 0.378091
+INFO:tensorflow:train_accuracy = 0.212891, learning_rate = 0.002, cross_entropy = 2.1768 (264.488 sec)
+INFO:tensorflow:loss = 2.46013, step = 1087 (264.488 sec)
+INFO:tensorflow:Saving checkpoints for 1179 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 2.3305.
+INFO:tensorflow:Starting evaluation at 2018-01-22-19:45:00
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-1179
+INFO:tensorflow:Finished evaluation at 2018-01-22-19:45:07
+INFO:tensorflow:Saving dict for global step 1179: accuracy = 0.190099, global_step = 1179, loss = 2.67463
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-1179
+INFO:tensorflow:Saving checkpoints for 1180 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.242188, learning_rate = 0.002, cross_entropy = 2.16071
+INFO:tensorflow:loss = 2.44388, step = 1180
+INFO:tensorflow:global_step/sec: 0.379251
+INFO:tensorflow:train_accuracy = 0.261719, learning_rate = 0.002, cross_entropy = 2.0925 (263.691 sec)
+INFO:tensorflow:loss = 2.37551, step = 1280 (263.691 sec)
+INFO:tensorflow:global_step/sec: 0.377348
+INFO:tensorflow:train_accuracy = 0.270833, learning_rate = 0.002, cross_entropy = 2.08246 (265.006 sec)
+INFO:tensorflow:loss = 2.36531, step = 1380 (265.006 sec)
+INFO:tensorflow:global_step/sec: 0.378296
+INFO:tensorflow:train_accuracy = 0.267578, learning_rate = 0.002, cross_entropy = 2.13855 (264.344 sec)
+INFO:tensorflow:loss = 2.42122, step = 1480 (264.344 sec)
+INFO:tensorflow:Saving checkpoints for 1572 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 2.27333.
+INFO:tensorflow:Starting evaluation at 2018-01-22-20:02:32
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-1572
+INFO:tensorflow:Finished evaluation at 2018-01-22-20:02:39
+INFO:tensorflow:Saving dict for global step 1572: accuracy = 0.245545, global_step = 1572, loss = 2.57604
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-1572
+INFO:tensorflow:Saving checkpoints for 1573 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.328125, learning_rate = 0.002, cross_entropy = 2.10369
+INFO:tensorflow:loss = 2.38622, step = 1573
+INFO:tensorflow:global_step/sec: 0.378793
+INFO:tensorflow:train_accuracy = 0.304688, learning_rate = 0.002, cross_entropy = 2.00957 (264.011 sec)
+INFO:tensorflow:loss = 2.29197, step = 1673 (264.010 sec)
+INFO:tensorflow:global_step/sec: 0.376896
+INFO:tensorflow:train_accuracy = 0.304688, learning_rate = 0.002, cross_entropy = 1.96871 (265.324 sec)
+INFO:tensorflow:loss = 2.25099, step = 1773 (265.324 sec)
+INFO:tensorflow:global_step/sec: 0.378902
+INFO:tensorflow:train_accuracy = 0.314453, learning_rate = 0.002, cross_entropy = 1.97077 (263.919 sec)
+INFO:tensorflow:loss = 2.25291, step = 1873 (263.920 sec)
+INFO:tensorflow:Saving checkpoints for 1965 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 2.04588.
+INFO:tensorflow:Starting evaluation at 2018-01-22-20:20:04
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-1965
+INFO:tensorflow:Finished evaluation at 2018-01-22-20:20:11
+INFO:tensorflow:Saving dict for global step 1965: accuracy = 0.213861, global_step = 1965, loss = 2.87478
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-1965
+INFO:tensorflow:Saving checkpoints for 1966 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.320313, learning_rate = 0.002, cross_entropy = 1.86918
+INFO:tensorflow:loss = 2.1512, step = 1966
+INFO:tensorflow:global_step/sec: 0.379527
+INFO:tensorflow:train_accuracy = 0.328125, learning_rate = 0.002, cross_entropy = 1.86071 (263.498 sec)
+INFO:tensorflow:loss = 2.14264, step = 2066 (263.498 sec)
+INFO:tensorflow:global_step/sec: 0.37722
+INFO:tensorflow:train_accuracy = 0.341146, learning_rate = 0.002, cross_entropy = 1.80311 (265.097 sec)
+INFO:tensorflow:loss = 2.08495, step = 2166 (265.097 sec)
+INFO:tensorflow:global_step/sec: 0.378927
+INFO:tensorflow:train_accuracy = 0.345703, learning_rate = 0.002, cross_entropy = 1.79715 (263.904 sec)
+INFO:tensorflow:loss = 2.07887, step = 2266 (263.903 sec)
+INFO:tensorflow:Saving checkpoints for 2358 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 1.9226.
+INFO:tensorflow:Starting evaluation at 2018-01-22-20:37:35
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-2358
+INFO:tensorflow:Finished evaluation at 2018-01-22-20:37:42
+INFO:tensorflow:Saving dict for global step 2358: accuracy = 0.266337, global_step = 2358, loss = 2.7125
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-2358
+INFO:tensorflow:Saving checkpoints for 2359 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.359375, learning_rate = 0.002, cross_entropy = 1.7741
+INFO:tensorflow:loss = 2.05572, step = 2359
+INFO:tensorflow:global_step/sec: 0.378854
+INFO:tensorflow:train_accuracy = 0.375, learning_rate = 0.002, cross_entropy = 1.68106 (263.967 sec)
+INFO:tensorflow:loss = 1.96261, step = 2459 (263.967 sec)
+INFO:tensorflow:global_step/sec: 0.375428
+INFO:tensorflow:train_accuracy = 0.398438, learning_rate = 0.002, cross_entropy = 1.67043 (266.355 sec)
+INFO:tensorflow:loss = 1.9519, step = 2559 (266.355 sec)
+INFO:tensorflow:global_step/sec: 0.360421
+INFO:tensorflow:train_accuracy = 0.404297, learning_rate = 0.002, cross_entropy = 1.67779 (277.456 sec)
+INFO:tensorflow:loss = 1.95917, step = 2659 (277.456 sec)
+INFO:tensorflow:Saving checkpoints for 2751 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 1.88105.
+INFO:tensorflow:Starting evaluation at 2018-01-22-20:55:33
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-2751
+INFO:tensorflow:Finished evaluation at 2018-01-22-20:55:39
+INFO:tensorflow:Saving dict for global step 2751: accuracy = 0.29901, global_step = 2751, loss = 2.67064
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-2751
+INFO:tensorflow:Saving checkpoints for 2752 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.414063, learning_rate = 0.002, cross_entropy = 1.73631
+INFO:tensorflow:loss = 2.01762, step = 2752
+INFO:tensorflow:global_step/sec: 0.363741
+INFO:tensorflow:train_accuracy = 0.410156, learning_rate = 0.002, cross_entropy = 1.61985 (274.933 sec)
+INFO:tensorflow:loss = 1.90109, step = 2852 (274.934 sec)
+INFO:tensorflow:global_step/sec: 0.362307
+INFO:tensorflow:train_accuracy = 0.429688, learning_rate = 0.002, cross_entropy = 1.59986 (276.009 sec)
+INFO:tensorflow:loss = 1.88104, step = 2952 (276.009 sec)
+INFO:tensorflow:global_step/sec: 0.194437
+INFO:tensorflow:train_accuracy = 0.441406, learning_rate = 0.002, cross_entropy = 1.44429 (514.306 sec)
+INFO:tensorflow:loss = 1.7254, step = 3052 (514.305 sec)
+INFO:tensorflow:Saving checkpoints for 3144 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 1.70461.
+INFO:tensorflow:Starting evaluation at 2018-01-22-21:17:46
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-3144
+INFO:tensorflow:Finished evaluation at 2018-01-22-21:17:53
+INFO:tensorflow:Saving dict for global step 3144: accuracy = 0.306931, global_step = 3144, loss = 2.80886
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-3144
+INFO:tensorflow:Saving checkpoints for 3145 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.429688, learning_rate = 0.002, cross_entropy = 1.4445
+INFO:tensorflow:loss = 1.72556, step = 3145
+INFO:tensorflow:global_step/sec: 0.361184
+INFO:tensorflow:train_accuracy = 0.429688, learning_rate = 0.002, cross_entropy = 1.48879 (276.881 sec)
+INFO:tensorflow:loss = 1.76979, step = 3245 (276.881 sec)
+INFO:tensorflow:global_step/sec: 0.361986
+INFO:tensorflow:train_accuracy = 0.46875, learning_rate = 0.002, cross_entropy = 1.30825 (276.254 sec)
+INFO:tensorflow:loss = 1.58921, step = 3345 (276.254 sec)
+INFO:tensorflow:global_step/sec: 0.364213
+INFO:tensorflow:train_accuracy = 0.486328, learning_rate = 0.002, cross_entropy = 1.37374 (274.565 sec)
+INFO:tensorflow:loss = 1.65464, step = 3445 (274.565 sec)
+INFO:tensorflow:Saving checkpoints for 3537 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 1.63066.
+INFO:tensorflow:Starting evaluation at 2018-01-22-21:36:03
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-3537
+INFO:tensorflow:Finished evaluation at 2018-01-22-21:36:10
+INFO:tensorflow:Saving dict for global step 3537: accuracy = 0.361386, global_step = 3537, loss = 2.54272
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-3537
+INFO:tensorflow:Saving checkpoints for 3538 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.476563, learning_rate = 0.002, cross_entropy = 1.32415
+INFO:tensorflow:loss = 1.60503, step = 3538
+INFO:tensorflow:global_step/sec: 0.361455
+INFO:tensorflow:train_accuracy = 0.5, learning_rate = 0.002, cross_entropy = 1.37647 (276.673 sec)
+INFO:tensorflow:loss = 1.6573, step = 3638 (276.673 sec)
+INFO:tensorflow:global_step/sec: 0.362089
+INFO:tensorflow:train_accuracy = 0.523438, learning_rate = 0.002, cross_entropy = 1.21878 (276.174 sec)
+INFO:tensorflow:loss = 1.49959, step = 3738 (276.173 sec)
+INFO:tensorflow:global_step/sec: 0.363807
+INFO:tensorflow:train_accuracy = 0.533203, learning_rate = 0.002, cross_entropy = 1.3332 (274.872 sec)
+INFO:tensorflow:loss = 1.61395, step = 3838 (274.873 sec)
+INFO:tensorflow:Saving checkpoints for 3930 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 1.53852.
+INFO:tensorflow:Starting evaluation at 2018-01-22-21:55:12
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-3930
+INFO:tensorflow:Finished evaluation at 2018-01-22-21:55:32
+INFO:tensorflow:Saving dict for global step 3930: accuracy = 0.389109, global_step = 3930, loss = 2.44461
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-3930
+INFO:tensorflow:Saving checkpoints for 3931 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.5, learning_rate = 0.0002, cross_entropy = 1.2511
+INFO:tensorflow:loss = 1.53185, step = 3931
+INFO:tensorflow:global_step/sec: 0.258238
+INFO:tensorflow:train_accuracy = 0.519531, learning_rate = 0.0002, cross_entropy = 1.28186 (387.252 sec)
+INFO:tensorflow:loss = 1.56257, step = 4031 (387.251 sec)
+INFO:tensorflow:global_step/sec: 0.380464
+INFO:tensorflow:train_accuracy = 0.544271, learning_rate = 0.0002, cross_entropy = 1.16154 (262.835 sec)
+INFO:tensorflow:loss = 1.44223, step = 4131 (262.835 sec)
+INFO:tensorflow:global_step/sec: 0.37872
+INFO:tensorflow:train_accuracy = 0.544922, learning_rate = 0.0002, cross_entropy = 1.33043 (264.050 sec)
+INFO:tensorflow:loss = 1.61107, step = 4231 (264.049 sec)
+INFO:tensorflow:Saving checkpoints for 4323 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 1.48692.
+INFO:tensorflow:Starting evaluation at 2018-01-22-22:15:13
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-4323
+INFO:tensorflow:Finished evaluation at 2018-01-22-22:15:19
+INFO:tensorflow:Saving dict for global step 4323: accuracy = 0.406931, global_step = 4323, loss = 2.41068
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-4323
+INFO:tensorflow:Saving checkpoints for 4324 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.546875, learning_rate = 0.0002, cross_entropy = 1.20633
+INFO:tensorflow:loss = 1.48697, step = 4324
+INFO:tensorflow:global_step/sec: 0.378295
+INFO:tensorflow:train_accuracy = 0.535156, learning_rate = 0.0002, cross_entropy = 1.22328 (264.357 sec)
+INFO:tensorflow:loss = 1.50389, step = 4424 (264.357 sec)
+INFO:tensorflow:global_step/sec: 0.376743
+INFO:tensorflow:train_accuracy = 0.559896, learning_rate = 0.0002, cross_entropy = 1.1033 (265.434 sec)
+INFO:tensorflow:loss = 1.38389, step = 4524 (265.434 sec)
+INFO:tensorflow:global_step/sec: 0.378486
+INFO:tensorflow:train_accuracy = 0.564453, learning_rate = 0.0002, cross_entropy = 1.25067 (264.211 sec)
+INFO:tensorflow:loss = 1.53123, step = 4624 (264.211 sec)
+INFO:tensorflow:Saving checkpoints for 4716 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 1.42783.
+INFO:tensorflow:Starting evaluation at 2018-01-22-22:32:46
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-4716
+INFO:tensorflow:Finished evaluation at 2018-01-22-22:32:52
+INFO:tensorflow:Saving dict for global step 4716: accuracy = 0.420792, global_step = 4716, loss = 2.4051
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-4716
+INFO:tensorflow:Saving checkpoints for 4717 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.554688, learning_rate = 0.0002, cross_entropy = 1.15359
+INFO:tensorflow:loss = 1.43414, step = 4717
+INFO:tensorflow:global_step/sec: 0.378467
+INFO:tensorflow:train_accuracy = 0.554688, learning_rate = 0.0002, cross_entropy = 1.17639 (264.237 sec)
+INFO:tensorflow:loss = 1.45693, step = 4817 (264.237 sec)
+INFO:tensorflow:global_step/sec: 0.376629
+INFO:tensorflow:train_accuracy = 0.575521, learning_rate = 0.0002, cross_entropy = 1.05405 (265.512 sec)
+INFO:tensorflow:loss = 1.33458, step = 4917 (265.513 sec)
+INFO:tensorflow:global_step/sec: 0.378257
+INFO:tensorflow:train_accuracy = 0.578125, learning_rate = 0.0002, cross_entropy = 1.18652 (264.370 sec)
+INFO:tensorflow:loss = 1.46701, step = 5017 (264.370 sec)
+INFO:tensorflow:Saving checkpoints for 5109 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 1.36736.
+INFO:tensorflow:Starting evaluation at 2018-01-22-22:50:19
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-5109
+INFO:tensorflow:Finished evaluation at 2018-01-22-22:50:25
+INFO:tensorflow:Saving dict for global step 5109: accuracy = 0.444554, global_step = 5109, loss = 2.34145
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-5109
+INFO:tensorflow:Saving checkpoints for 5110 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.570313, learning_rate = 0.0002, cross_entropy = 1.08856
+INFO:tensorflow:loss = 1.36906, step = 5110
+INFO:tensorflow:global_step/sec: 0.378185
+INFO:tensorflow:train_accuracy = 0.582031, learning_rate = 0.0002, cross_entropy = 1.15177 (264.432 sec)
+INFO:tensorflow:loss = 1.43225, step = 5210 (264.432 sec)
+INFO:tensorflow:global_step/sec: 0.37662
+INFO:tensorflow:train_accuracy = 0.598958, learning_rate = 0.0002, cross_entropy = 1.01042 (265.520 sec)
+INFO:tensorflow:loss = 1.2909, step = 5310 (265.521 sec)
+INFO:tensorflow:global_step/sec: 0.378612
+INFO:tensorflow:train_accuracy = 0.599609, learning_rate = 0.0002, cross_entropy = 1.12954 (264.124 sec)
+INFO:tensorflow:loss = 1.40999, step = 5410 (264.123 sec)
+INFO:tensorflow:Saving checkpoints for 5502 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 1.30839.
+INFO:tensorflow:Starting evaluation at 2018-01-22-23:07:51
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-5502
+INFO:tensorflow:Finished evaluation at 2018-01-22-23:07:58
+INFO:tensorflow:Saving dict for global step 5502: accuracy = 0.454455, global_step = 5502, loss = 2.259
+INFO:tensorflow:Create CheckpointSaverHook.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-5502
+INFO:tensorflow:Saving checkpoints for 5503 into cifar10_model\model.ckpt.
+INFO:tensorflow:train_accuracy = 0.601563, learning_rate = 0.0002, cross_entropy = 1.03006
+INFO:tensorflow:loss = 1.31053, step = 5503
+INFO:tensorflow:global_step/sec: 0.378691
+INFO:tensorflow:train_accuracy = 0.609375, learning_rate = 0.0002, cross_entropy = 1.12142 (264.080 sec)
+INFO:tensorflow:loss = 1.40189, step = 5603 (264.079 sec)
+INFO:tensorflow:global_step/sec: 0.376616
+INFO:tensorflow:train_accuracy = 0.625, learning_rate = 0.0002, cross_entropy = 0.970337 (265.531 sec)
+INFO:tensorflow:loss = 1.25081, step = 5703 (265.532 sec)
+INFO:tensorflow:global_step/sec: 0.378524
+INFO:tensorflow:train_accuracy = 0.625, learning_rate = 0.0002, cross_entropy = 1.07604 (264.176 sec)
+INFO:tensorflow:loss = 1.35649, step = 5803 (264.176 sec)
+INFO:tensorflow:Saving checkpoints for 5895 into cifar10_model\model.ckpt.
+INFO:tensorflow:Loss for final step: 1.25136.
+INFO:tensorflow:Starting evaluation at 2018-01-22-23:25:24
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-5895
+INFO:tensorflow:Finished evaluation at 2018-01-22-23:25:31
+INFO:tensorflow:Saving dict for global step 5895: accuracy = 0.478218, global_step = 5895, loss = 2.15884
+WARNING:tensorflow:Input graph does not contain a QueueRunner. That means predict yields forever. This is probably a mistake.
+INFO:tensorflow:Restoring parameters from cifar10_model\model.ckpt-5895
+2018-01-23 00:22:30.167613: I C:\tf_jenkins\home\workspace\rel-win\M\windows\PY\35\tensorflow\core\platform\cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
