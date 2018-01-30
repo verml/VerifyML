@@ -3,7 +3,7 @@ Created on Fri May 26 15:20:01 2017
 
 #Digit Recognition for V & V
 
-#Following note added by Raghu
+#Following note added by RR
 Note: 
 1. The actual digits data from the http://archive.ics.uci.edu/ml/datasets/Pen-Based+Recognition+of+Handwritten+Digits is different than the one referred in this sklearn example
 2. For more info, refer this link http://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html and the above one.

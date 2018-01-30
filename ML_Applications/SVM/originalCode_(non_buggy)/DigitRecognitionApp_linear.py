@@ -4,7 +4,7 @@ Created on Fri May 26 15:20:01 2017
 
 #Digit Recognition for V & V
 
-#Following note added by Raghu
+#Following note added by RR
 Note: 
 1. The actual digits data from the http://archive.ics.uci.edu/ml/datasets/Pen-Based+Recognition+of+Handwritten+Digits is different than the one referred in this sklearn example
 2. For more info, refer this link http://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html and the above one.
@@ -36,7 +36,7 @@ digits_test_images.shape = (-1,8,8)
 digits_test_target = digits_test[:,-1].astype(np.int) #Label
 # The digits dataset
 #digits = datasets.load_digits()
-#Added by Raghu
+#Added by RR
 #List Of tuples - Where first element represents 2d numpy array representing a digit and the second element represents label (digit itself)
 #zip function takes two equal length collections and merges them together in pairs
 images_and_labels = list(zip(digits_images, digits_target))
@@ -49,7 +49,7 @@ images_and_labels = list(zip(digits_images, digits_target))
 #plt.show()
 
 # To apply a classifier on this data, we need to flatten the image, to
-# turn the data in a (samples, feature) matrix:   < Added by Raghu: same fashion as the data in csv format.>
+# turn the data in a (samples, feature) matrix:   < Added by RR: same fashion as the data in csv format.>
 
 n_samples = len(digits_images)
 #data = digits_images.reshape((n_samples, -1))    
